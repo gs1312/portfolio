@@ -12,25 +12,25 @@ function App() {
     <div>
       <footer className="ftr">
         <section>
-          <img src={img} />
+          <img src={img} alt="pic" />
         </section>
         <div className="links">
           <a href="https://www.linkedin.com/in/garvit-sharma-b44935140/">
-            <img src={linkedinlogo} className="logo" />
+            <img src={linkedinlogo} className="logo" alt="linkedIn" />
           </a>
           <a href="https://twitter.com/garvit13121999">
             {" "}
-            <img src={twtlogo} className="logo" />
+            <img src={twtlogo} className="logo" alt="twitter" />
           </a>
           <a href="https://www.instagram.com/garvitsharma505/">
-            <img src={instalogo} className="logo" />
+            <img src={instalogo} className="logo" alt="instagram" />
           </a>
           <a href="https://www.youtube.com/c/GarvitSharma1312">
-            <img src={ytlogo} className="logo" />
+            <img src={ytlogo} className="logo" alt="youtube" />
           </a>
           <a href="https://github.com/gs1312">
             {" "}
-            <img src={gitlogo} className="logo" />
+            <img src={gitlogo} className="logo" alt="github" />
           </a>
         </div>
       </footer>

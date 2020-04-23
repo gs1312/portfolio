@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Comic+Neue:ital,wght@1,700&family=Montserrat:wght@600&display=swap");
+* {
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #d3cce3;
+  background: -webkit-linear-gradient(to right, #d3cce3, #e9e4f0);
+  background: linear-gradient(to right, #d3cce3, #e9e4f0);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ftr {
+  background: #bdc3c7;
+  background: -webkit-linear-gradient(to right, #bdc3c7, #2c3e50);
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+  height: 5em;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.ftr section {
+  width: 30%;
+}
+.ftr section img {
+  position: relative;
+  border: solid rgb(89, 161, 209) 0.5em;
+  border-radius: 14em;
+  width: 10em;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+.links {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2em;
+}
+.logo {
+  width: 5em;
+  height: 5em;
+  border-radius: 10em;
+  border: solid white 0.1em;
+}
+.logo:hover {
+  opacity: 0.8;
+  width: 5.5em;
+  height: 5.5em;
+}
+.desc {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2em 0em 0em 15em;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.desc h1 {
+  font-size: 5em;
+  color: black;
+  font-family: "Caveat", cursive;
+}
+.desc h2 {
+  font-size: 1em;
+  color: rgb(82, 185, 253);
+  font-family: "Montserrat", sans-serif;
+}
+.desc a {
+  color: rgb(82, 185, 253);
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container {
+  border: solid rgb(89, 161, 209) 0.25em;
+  margin: 5em;
+  border-radius: 2em;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: #c9d6ff;
+  background: -webkit-linear-gradient(to right, #c9d6ff, #e2e2e2);
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+}
+.container h1 {
+  margin: 1em;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+/* .container h2 {
+  margin-left: 2em;
+  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
+} */
+
+.container p {
+  margin: 1em 2em 1em 3em;
+  font-size: 1.3em;
+  font-family: "Comic Neue", cursive;
+}
+.skl {
+  text-align: center;
+  color: grey;
+  text-transform: uppercase;
+}
+
+@media (max-width: 930px) {
+  .ftr {
+    height: 10em;
   }
-  to {
-    transform: rotate(360deg);
+  .ftr section {
+    width: 100%;
   }
+  .ftr section img {
+    margin-top: 6em;
+    margin-left: 35%;
+    width: 7em;
+  }
+  .links {
+    width: 100%;
+    position: absolute;
+    top: 1%;
+  }
+  .logo {
+    width: 3em;
+    height: 3em;
+  }
+  .desc {
+    margin-left: 0em;
+    margin-top: 5em;
+  }
+  .desc h1 {
+    font-size: 3em;
+  }
+  .container {
+    margin: 2em 1em 3em 1em;
+  }
+  .container h1 {
+    margin: 0.5em;
+    font-size: 1.5em;
+  }
+  .container p {
+    margin: 1.5em;
+  }
+  /* .container h2 {
+    font-size: 1em;
+  } */
 }
